@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin+Sketch&display=swap');
+
+body {
+    background-image: url("assets/body-image-bg.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+}
+
+header>img {
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    /* مرکز‌چین کردن محتوا در افقی */
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+
+
+
+}
+
+nav ul li {
+    background-color: #77bdff;
+    width: 150px;
+    height: 25px;
+    padding-top: 5px;
+    z-index: 2;
+}
+
+nav ul li:hover {
+    background-color: #bde0fe;
+    width: 150px;
+    height: 25px;
+    box-shadow: 0px 10px 25px 5px rgba(0, 174, 255, 0.2);
+
+}
+
+
+
+nav ul ul {
+    display: none;
+
+
+}
+
+nav ul li:hover>ul {
+    display: block;
+
+}
+
+.need-marg {
+    margin-top: 4px;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    color: azure;
+}
+
+nav a:hover {
+    color: #77bdff;
+}
