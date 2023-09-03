@@ -1,73 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin+Sketch&display=swap');
 
-body {
-    background-image: url("assets/body-image-bg.png");
-    background-repeat: repeat;
-    background-attachment: fixed;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
 
-}
-
-header>img {
-
-
-}
-
-nav {
+/* start navbar styles */
+#container {
     display: flex;
-    justify-content: center;
-    /* مرکز‌چین کردن محتوا در افقی */
     align-items: center;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    text-align: center;
-
+    justify-content: space-between; /* میان‌گذاری افقی بین span و nav */
+    padding: 25px; /* افزودن فاصله به اطراف محتوا */
+    font-family: 'Roboto', sans-serif;
 
 
 }
-
-nav ul li {
-    background-color: #77bdff;
-    width: 150px;
-    height: 25px;
-    padding-top: 5px;
-    z-index: 2;
-}
-
-nav ul li:hover {
-    background-color: #bde0fe;
-    width: 150px;
-    height: 25px;
-    box-shadow: 0px 10px 25px 5px rgba(0, 174, 255, 0.2);
-
-}
-
-
-
-nav ul ul {
-    display: none;
-
-
-}
-
-nav ul li:hover>ul {
-    display: block;
-
-}
-
-.need-marg {
-    margin-top: 4px;
-
-}
-
-nav a {
+ nav a{
     text-decoration: none;
-    font-family: 'Bree Serif', serif;
-    color: azure;
+    font-size: 20px;
+color: black;
+ }
+
+ nav a:active {
+    
+    color: rgb(41, 41, 41);
 }
 
 nav a:hover {
-    color: #77bdff;
+    
+    color: rgb(0, 119, 183);
+    text-shadow: 1px 1px 1px #0000006f, 
+               3px 3px 5px rgb(53, 191, 255,0.1); 
 }
+
+.horizontal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* حذف همه مارجین‌ها و پدینگ‌ها در داخل لیست */
+}
+
+.horizontal-list li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+.horizontal-list li:last-child {
+    margin-right: 100px;
+}
+#header-name {
+    font-size: 25px;
+    margin-left: 50px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+/* End navbar styles */
+
+/* start section1 styles */
+
+#section1{
+    width: 100%;
+    min-height:500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+    background-image: url("../img/bg-pattern.png");
+    background-repeat: repeat;
+    box-shadow: inset 0px 53px 70px -25px rgba(0,0,0,0.3);
+
+    
+}
+
+#header-h3{
+   margin: 40% 0 0 25%;
+   font-family: 'Raleway', sans-serif;
+   font-size: 2em;
+}
+
+#header-h6{
+    margin: 15px 0 0 25%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+ }
+ /* End section1 styles */
+
+ /* start section2 styles */
+ #card-container {
+
+ }
