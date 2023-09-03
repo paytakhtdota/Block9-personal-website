@@ -84,5 +84,20 @@ nav a:hover {
 
  /* start section2 styles */
  #card-container {
+    width: 1024px;
+    min-height: fit-content;
+    background-color: rgb(224, 224, 224, 0.1);
+    margin: 10px auto;
+    display: flex;
+    padding: 16px 0 16px 0;
+    border: 1px dashed #77889955;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 
+ }
+ .card-div {
+    width: 320px;
+    margin-left: 16px;
+    background-color: aliceblue;
+    
  }
