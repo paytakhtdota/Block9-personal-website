@@ -1,49 +1,55 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
 
 /* start navbar styles */
 #container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* میان‌گذاری افقی بین span و nav */
-    padding: 25px; /* افزودن فاصله به اطراف محتوا */
+    justify-content: space-between;
+    /* میان‌گذاری افقی بین span و nav */
+    padding: 25px;
+    /* افزودن فاصله به اطراف محتوا */
     font-family: 'Roboto', sans-serif;
+    background-image: url("../img/nav-bg.png");
+    background-repeat: repeat;
 
 
 }
- nav a{
+
+nav a {
     text-decoration: none;
     font-size: 20px;
-color: black;
- }
+    color: black;
+}
 
- nav a:active {
-    
+nav a:active {
+
     color: rgb(41, 41, 41);
 }
 
 nav a:hover {
-    
+
     color: rgb(0, 119, 183);
-    text-shadow: 1px 1px 1px #0000006f, 
-               3px 3px 5px rgb(53, 191, 255,0.1); 
+    text-shadow: 1px 1px 1px #0000006f,
+        3px 3px 5px rgb(53, 191, 255, 0.1);
 }
 
 .horizontal-list {
     list-style: none;
     padding: 0;
-    margin: 0; /* حذف همه مارجین‌ها و پدینگ‌ها در داخل لیست */
+    margin: 0;
+    /* حذف همه مارجین‌ها و پدینگ‌ها در داخل لیست */
 }
 
 .horizontal-list li {
     display: inline;
     margin-right: 20px;
-    
+
 }
 
 .horizontal-list li:last-child {
     margin-right: 100px;
 }
+
 #header-name {
     font-size: 25px;
     margin-left: 50px;
@@ -55,35 +61,61 @@ nav a:hover {
 
 /* start section1 styles */
 
-#section1{
+#section1 {
     width: 100%;
-    min-height:500px;
+    min-height: 500px;
     display: flex;
     justify-content: space-between;
     padding: 10px 10px 0 10px;
     background-image: url("../img/bg-pattern.png");
     background-repeat: repeat;
-    box-shadow: inset 0px 53px 70px -25px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 53px 70px -25px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #4f505280;
+    border-top: 1px dotted #4f5052f0;
 
-    
+
 }
 
-#header-h3{
-   margin: 40% 0 0 25%;
-   font-family: 'Raleway', sans-serif;
-   font-size: 2em;
+#header-h3 {
+    margin: 40% 0 0 25%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
 }
 
-#header-h6{
+#header-h6 {
     margin: 15px 0 0 25%;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 1.5em;
- }
- /* End section1 styles */
+}
 
- /* start section2 styles */
- #card-container {
+/* End section1 styles */
+
+/* start section2 styles
+
+
+  #section2{
+    min-height: 400px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    box-shadow: inset 0px 25px 15px -20px rgba(0,0,0,0.2),inset 0px -25px 15px -20px rgba(0,0,0,0.2);}
+/* End section2 styles 
+ start section3 styles */
+#card-container-up {
+    width: 1024px;
+    min-height: fit-content;
+    background-color: rgb(224, 224, 224, 0.1);
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    padding: 16px 0 16px 0;
+    border: 1px dashed #77889955;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+#card-container-down {
     width: 1024px;
     min-height: fit-content;
     background-color: rgb(224, 224, 224, 0.1);
@@ -91,13 +123,80 @@ nav a:hover {
     display: flex;
     padding: 16px 0 16px 0;
     border: 1px dashed #77889955;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 
- }
- .card-div {
+}
+
+.card-div {
     width: 320px;
     margin-left: 16px;
-    background-color: aliceblue;
-    
- }
+
+
+}
+
+/* End section3 styles */
+
+#footer1 {
+    background-image: url("../img/footer-bg1.png");
+    min-height: 25px;
+    background-repeat: repeat-x;
+    margin-top: 150px;
+}
+
+#footer2 {
+    background-image: url("../img/footer-bg.png");
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-color: #212b34;
+    background-position: center;
+}
+
+.footer-menuclass{
+    padding-right: 25px;
+    padding-left: 25px;
+    color:white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+
+.footer-menuclass:hover{
+    color: rgb(207, 226, 241);
+    font-weight: 600;
+}
+
+.footer-icon{
+    padding-right: 25px;
+    padding-left: 25px;
+    color:white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+#facebook:hover {
+    color:#0088ff;
+    font-size: 1.4em;
+}
+
+#twitter:hover {
+    color:#b5b5b5;
+    font-size: 1.4em;
+}
+
+#youtube:hover {
+    color:#ff0000;
+    font-size: 1.4em;
+}
+
+#github:hover {
+    color:#9500ff;
+    font-size: 1.4em;
+}
+footer p {
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}

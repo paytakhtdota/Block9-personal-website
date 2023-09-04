@@ -21,3 +21,28 @@ function change2UnderJs() {
 function changeJs() {
     document.getElementById("js-jpg").src = ("./img/js.jpg");
 }
+
+
+function change2UnderMYsql() {
+    document.getElementById("mysql-jpg").src = ("./img/under-mysql.jpg");
+}
+
+function changeMYsql() {
+    document.getElementById("mysql-jpg").src = ("./img/mysql.jpg");
+}
+
+function change2UnderPhp() {
+    document.getElementById("php-jpg").src = ("./img/under-php.jpg");
+}
+
+function changePhp() {
+    document.getElementById("php-jpg").src = ("./img/php.jpg");
+}
+
+function change2UnderPyton() {
+    document.getElementById("pyton-jpg").src = ("./img/under-pyton.jpg");
+}
+
+function changePyton() {
+    document.getElementById("pyton-jpg").src = ("./img/pyton.jpg");
+}

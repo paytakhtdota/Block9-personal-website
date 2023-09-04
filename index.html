@@ -7,21 +7,20 @@
     <title>Personal Website: Mo Ansari</title>
     <link rel="stylesheet" type="text/css" href="./css/res3t.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
     <script src="./js/javascript.js"></script>
 </head>
 
 <body>
     <header>
-        <div id="container" style="">
-            <h1 id="header-name">MO . ANSARI</h1>
+        <div id="container" >
+            <h1 id="header-name" style="text-shadow: #000000a8 0.1em 0.1em 0.2em">MO . ANSARI</h1>
             <nav id="nav-container">
                 <ul class="horizontal-list">
-                    <li><a href="./index.html"><i class="fas fa-home"></i>&nbsp;Home&nbsp;</a></li>
-                    <li><a href="#"><i class="fas fa-address-card"></i>&nbsp;About&nbsp;</a></li>
-                    <li><a href="#"><i class="fas fa-folder-open"></i>&nbsp;Portfolio&nbsp;</a></li>
+                    <li><a href="./index.html"><i class="fa-solid fa-house"></i>&nbsp;Home&nbsp;</a></li>
+                    <li><a href="#"><i class="fa-solid fa-address-card"></i>&nbsp;About&nbsp;</a></li>
+                    <li><a href="#"><i class="fa-regular fa-folder-open"></i>&nbsp;Portfolio&nbsp;</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,26 +30,64 @@
             <h3 id="header-h3">&nbsp;LOVE&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;LEARN</h3>
             <h5 id="header-h6">For me, There is nothing more exciting than learning web development!</h5>
         </span>
-        <img src="./img/profile-pic.png" alt="profile-pic" id="header-img" style="">
+        <img src="./img/profile-pic.png" alt="profile-pic" id="header-img" >
 
     </section>
-    <section id="section2">
-        <div id="card-container">
+    <!-- <section id="section2"></section> -->
+
+
+    <section id="section3">
+        <div id="card-container-up">
             <div class="card-div">
-                <img id="html-jpg" onmouseover="change2UnderHtml()" onmouseout="changeHtml()" src="./img/html.jpg" alt="html">
+                <img id="html-jpg" onmouseover="change2UnderHtml()" onmouseout="changeHtml()" src="./img/html.jpg"
+                    alt="html">
             </div>
-            <div class="card-div"> 
-                <img id="css-jpg" onmouseover="change2UnderCss()" onmouseout="changeCss()" src="./img/css.jpg" alt="html">
+            <div class="card-div">
+                <img id="css-jpg" onmouseover="change2UnderCss()" onmouseout="changeCss()" src="./img/css.jpg"
+                    alt="Css">
             </div>
-            <div class="card-div"> <img id="js-jpg" onmouseover="change2UnderJs()" onmouseout="changeJs()" src="./img/js.jpg" alt="html"></div>
+            <div class="card-div"> <img id="js-jpg" onmouseover="change2UnderJs()" onmouseout="changeJs()"
+                    src="./img/js.jpg" alt="JavaScript"></div>
         </div>
-        <div id="card-container">
-            <div class="card-div">1</div>
-            <div class="card-div">2</div>
-            <div class="card-div">3</div>
+
+
+        <div id="card-container-down">
+            <div class="card-div">
+                <img id="php-jpg" onmouseover="change2UnderPhp()" onmouseout="changePhp()" src="./img/php.jpg"
+                    alt="php">
+            </div>
+            <div class="card-div">
+                <img id="mysql-jpg" onmouseover="change2UnderMYsql()" onmouseout="changeMYsql()" src="./img/mysql.jpg"
+                    alt="mysql">
+            </div>
+            <div class="card-div"> <img id="pyton-jpg" onmouseover="change2UnderPyton()" onmouseout="changePyton()"
+                    src="./img/pyton.jpg" alt="html"></div>
         </div>
 
     </section>
+    <footer>
+        <div id="footer1">
+
+        </div>
+        <div id="footer2">
+            <div id="footer-menu" style="margin-left: 40%;padding-top: 50px;">
+                <a class="footer-menuclass" href="./index.html">Home</a><i style="color: white;">|</i>
+                <a class="footer-menuclass" href="./about.html">About</a><i style="color: white;">|</i>
+                <a class="footer-menuclass" href="./portfolio.html">Portfolio</a>
+            </div>
+            <div id="social-icon" style="margin-left: 41%;padding-top: 25px;">
+                <a id="facebook" class="footer-icon" href="#facebook"><i class="fab fa-facebook-f"></i></i></a>
+                <a id="twitter" class="footer-icon" href="#X"><i class="fa-brands fa-x-twitter"></i></a>
+
+                <a id="youtube" class="footer-icon" href="#youtube"><i class="fab fa-youtube"></i></a>
+                <a id="github" class="footer-icon" href="#github"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div id="copy-right" style="margin-left: 33%;padding-top: 20px;">
+                <p>© 2023 - 2023 www.paytakht.onlinewebshop.net - All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 
