@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Space+Mono&display=swap');
 
 /* start navbar styles */
 #container {
@@ -66,10 +66,9 @@ nav a:hover {
     min-height: 500px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px 0 10px;
     background-image: url("../img/bg-pattern.png");
     background-repeat: repeat;
-    box-shadow: inset 0px 53px 70px -25px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 25px 15px -20px rgba(0, 0, 0, 0.2), inset 0px -25px 15px -20px rgba(0, 0, 0, 0.2);
     border-bottom: 1px dotted #4f505280;
     border-top: 1px dotted #4f5052f0;
 
@@ -87,6 +86,10 @@ nav a:hover {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 1.5em;
+}
+
+#header-img {
+    margin-right: 2%;
 }
 
 /* End section1 styles */
@@ -152,51 +155,102 @@ nav a:hover {
     background-position: center;
 }
 
-.footer-menuclass{
+.footer-menuclass {
     padding-right: 25px;
     padding-left: 25px;
-    color:white;
+    color: white;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
 }
 
-.footer-menuclass:hover{
+.footer-menuclass:hover {
     color: rgb(207, 226, 241);
     font-weight: 600;
 }
 
-.footer-icon{
+.footer-icon {
     padding-right: 25px;
     padding-left: 25px;
-    color:white;
+    color: white;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
 }
 
 #facebook:hover {
-    color:#0088ff;
+    color: #0088ff;
     font-size: 1.4em;
 }
 
 #twitter:hover {
-    color:#b5b5b5;
+    color: #b5b5b5;
     font-size: 1.4em;
 }
 
 #youtube:hover {
-    color:#ff0000;
+    color: #ff0000;
     font-size: 1.4em;
 }
 
 #github:hover {
-    color:#9500ff;
+    color: #9500ff;
     font-size: 1.4em;
 }
+
 footer p {
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
     word-spacing: 7px;
 }
+
+
+
+
+
+
+
+/* about.html */
+#section1-about {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818;
+    box-shadow: inset 0px 25px 15px -20px rgba(0, 0, 0, 0.2), inset 0px -25px 15px -20px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px dotted #4f505280;
+    border-top: 1px dotted #4f5052f0;
+}
+
+
+.typing-container {
+    display: block;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 5px;
+
+    font-size: 1.3em;
+
+    color: #00ff0c;
+    font-family: 'Space Mono', monospace;
+
+}
+
+#about-h3 {
+    display: flex;
+    justify-content: center; /* مرکز‌گذاری افقی در وسط صفحه */
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    margin-top: 2%;
+
+}
+
+#about-h5 {
+    display: flex;
+    justify-content: center; /* مرکز‌گذاری افقی در وسط صفحه */
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;}
