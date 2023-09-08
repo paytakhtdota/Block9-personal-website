@@ -125,6 +125,7 @@ nav a:hover {
  start section3 styles */
  #section3{
     background-color: white;
+    padding-bottom: 25px;
  }
 #card-container-up {
     width: 1024px;
