@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Space+Mono&display=swap');
 
 /* start navbar styles */
+body{
+    background-image: url('../img/bg-about.jpg'); /* تصویر پس‌زمینه */
+  background-size: cover; /* تنظیم اندازه پس‌زمینه برای پر کردن تمام صفحه */
+  background-attachment: fixed; 
+  background-color: #181818;
+}
 #container {
     display: flex;
     align-items: center;
@@ -89,6 +95,22 @@ nav a:hover {
     margin-right: 2%;
 }
 
+#home-h3{
+    margin: 0 0 0 42%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    text-shadow: 1px 3px 5px #0000005f;
+    padding-top: 2%;
+    
+}
+
+#home-h5{
+    margin: 15px 0 0 29%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    text-shadow: 1px 3px 5px #0000005f;
+}
+
 /* End section1 styles */
 
 /* start section2 styles
@@ -101,6 +123,9 @@ nav a:hover {
     box-shadow: inset 0px 25px 15px -20px rgba(0,0,0,0.2),inset 0px -25px 15px -20px rgba(0,0,0,0.2);}
 /* End section2 styles 
  start section3 styles */
+ #section3{
+    background-color: white;
+ }
 #card-container-up {
     width: 1024px;
     min-height: fit-content;
@@ -141,7 +166,7 @@ nav a:hover {
     background-image: url("../img/footer-bg1.png");
     min-height: 25px;
     background-repeat: repeat-x;
-    margin-top: 150px;
+    
 }
 
 #footer2 {
@@ -224,6 +249,7 @@ footer p {
 }
 
 #section2-about{
+    
     
 }
 
