@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&family=Raleway&family=Roboto&family=Space+Mono&display=swap');
+body{
+    background-image: url('../img/portfolio-bg.jpg'); /* تصویر پس‌زمینه */
+  background-size: cover; /* تنظیم اندازه پس‌زمینه برای پر کردن تمام صفحه */
+  background-attachment: fixed; 
+  background-color: #181818;
+  background-position: center;
+}
+h1,h2,h3,h4,h5,h6{
+font-family: 'Proza Libre', sans-serif;
+}
+h1{
+    font-size: 2em;
+
+}
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* میان‌گذاری افقی بین span و nav */
+    padding: 25px;
+    /* افزودن فاصله به اطراف محتوا */
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../img/nav-bg.png");
+    background-repeat: repeat;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+nav a:active {
+
+    color: rgb(41, 41, 41);
+}
+
+nav a:hover {
+
+    color: rgb(0, 119, 183);
+    text-shadow: 1px 1px 1px #0000006f,
+        3px 3px 5px rgb(53, 191, 255, 0.1);
+}
+
+.horizontal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* حذف همه مارجین‌ها و پدینگ‌ها در داخل لیست */
+}
+
+.horizontal-list li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+.horizontal-list li:last-child {
+    margin-right: 100px;
+}
+
+#header-name {
+    font-size: 25px;
+    margin-left: 50px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+/* header end*/
+
+
+
+#section-portfolio{
+    display: grid;
+    place-items: center;
+ 
+}
+/* section end*/
+
+.right-portfolio-card{
+    width: 960px;
+    height: 250px;
+    border: 2px solid white;
+    border-top-right-radius: 125px;
+    border-bottom-right-radius: 125px;
+    margin: 30px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.left-portfolio-card{
+    width: 960px;
+    height: 250px;
+    border: 2px solid white;
+    border-top-left-radius: 125px;
+    border-bottom-left-radius: 125px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.div-discribtion-right{
+width: 650px;
+padding: 25px;
+text-align: justify;
+color: white;
+text-shadow: -2px 1px 5px #000000, 2px 0px 2px #000000;
+
+}
+
+.div-img-right{
+    background-color: #ffffff;
+    border: 1px  white;
+    border-style: double;    
+    margin: 15px;
+    width: 220px;
+    height: 220px;
+    border-radius: 200px;
+    float: right;
+    overflow: hidden;
+    object-fit: cover;
+  
+
+}
+
+.div-img-left{
+    background-color: #ffffff;
+    border: 1px  white;
+    border-style: double;  
+    margin: 15px;
+    width: 220px;
+    height: 220px;
+    border-radius: 200px;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+.div-discribtion-left{
+    width: 650px;
+    padding: 25px;
+    text-align: justify;
+    color: white;
+    text-shadow: -2px 1px 5px #000000, 2px 0px 2px #000000, -1px 1px 2px #000000;
+    
+    }
+.p-discribtion{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+.img-portfolio{
+    width: 220px;
+  
+}
+
+.img-portfolio:hover{
+    animation: moving 2s ease-in-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes moving {
+    0% {
+      transform: rotate(10deg);
+    }
+   
+    
+    50% {
+      transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+      }
+  }
+
+
+
+/* portfolio DIVs end*/
+
+#footer1 {
+    background-image: url("../img/footer-bg1.png");
+    min-height: 25px;
+    background-repeat: repeat-x;
+    
+}
+
+#footer2 {
+    background-image: url("../img/footer-bg.png");
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-color: #212b34;
+    background-position: center;
+}
+
+.footer-menuclass {
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+
+.footer-menuclass:hover {
+    color: rgb(207, 226, 241);
+    font-weight: 600;
+}
+
+.footer-icon {
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+#facebook:hover {
+    color: #0088ff;
+    font-size: 1.4em;
+}
+
+#twitter:hover {
+    color: #b5b5b5;
+    font-size: 1.4em;
+}
+
+#youtube:hover {
+    color: #ff0000;
+    font-size: 1.4em;
+}
+
+#github:hover {
+    color: #9500ff;
+    font-size: 1.4em;
+}
+
+footer p {
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}
+
+/*footer end*/
+
