@@ -11,6 +11,7 @@ font-family: 'Proza Libre', sans-serif;
 }
 h1{
     font-size: 2em;
+    padding-bottom: 10px;
 
 }
 #container {
@@ -163,22 +164,22 @@ text-shadow: -2px 1px 5px #000000, 2px 0px 2px #000000;
 }
 
 .img-portfolio:hover{
-    animation: moving 2s ease-in-out;
+    animation: moving 2s ease-in-out 0.15s;
     animation-iteration-count: infinite;
     cursor: pointer;
 }
 
 @keyframes moving {
     0% {
-      transform: rotate(10deg);
+      transform: rotate(0deg);
     }
    
     
     50% {
-      transform: rotate(-10deg);
+      transform: rotate(-12deg);
     }
     100% {
-        transform: rotate(10deg);
+        transform: rotate(0deg);
       }
   }
 
