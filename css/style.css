@@ -1,73 +1,295 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Space+Mono&display=swap');
 
-body {
-    background-image: url("assets/body-image-bg.png");
-    background-repeat: repeat;
-    background-attachment: fixed;
-
+/* start navbar styles */
+body{
+    background-image: url('../img/bg-about.jpg'); /* تصویر پس‌زمینه */
+  background-size: cover; /* تنظیم اندازه پس‌زمینه برای پر کردن تمام صفحه */
+  background-attachment: fixed; 
+  background-color: #181818;
 }
-
-header>img {
-
-
-}
-
-nav {
+#container {
     display: flex;
-    justify-content: center;
-    /* مرکز‌چین کردن محتوا در افقی */
     align-items: center;
-}
+    justify-content: space-between;
+    /* میان‌گذاری افقی بین span و nav */
+    padding: 25px;
+    /* افزودن فاصله به اطراف محتوا */
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../img/nav-bg.png");
+    background-repeat: repeat;
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    text-align: center;
-
-
-
-}
-
-nav ul li {
-    background-color: #77bdff;
-    width: 150px;
-    height: 25px;
-    padding-top: 5px;
-    z-index: 2;
-}
-
-nav ul li:hover {
-    background-color: #bde0fe;
-    width: 150px;
-    height: 25px;
-    box-shadow: 0px 10px 25px 5px rgba(0, 174, 255, 0.2);
-
-}
-
-
-
-nav ul ul {
-    display: none;
-
-
-}
-
-nav ul li:hover>ul {
-    display: block;
-
-}
-
-.need-marg {
-    margin-top: 4px;
 
 }
 
 nav a {
     text-decoration: none;
-    font-family: 'Bree Serif', serif;
-    color: azure;
+    font-size: 20px;
+    color: black;
+}
+
+nav a:active {
+
+    color: rgb(41, 41, 41);
 }
 
 nav a:hover {
-    color: #77bdff;
+
+    color: rgb(0, 119, 183);
+    text-shadow: 1px 1px 1px #0000006f,
+        3px 3px 5px rgb(53, 191, 255, 0.1);
+}
+
+.horizontal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* حذف همه مارجین‌ها و پدینگ‌ها در داخل لیست */
+}
+
+.horizontal-list li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+.horizontal-list li:last-child {
+    margin-right: 100px;
+}
+
+#header-name {
+    font-size: 25px;
+    margin-left: 50px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+/* End navbar styles */
+
+/* start section1 styles */
+
+#section1 {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818;
+    box-shadow: inset 0px 25px 15px -20px rgba(0, 0, 0, 0.2), inset 0px -25px 15px -20px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px dotted #4f505280;
+    border-top: 1px dotted #4f5052f0;
+}
+
+#header-h3 {
+    margin: 40% 0 0 25%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+}
+
+#header-h6 {
+    margin: 15px 0 0 25%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+#header-img {
+    margin-right: 2%;
+}
+
+#home-h3{
+    margin: 0 0 0 42%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    text-shadow: 1px 3px 5px #0000005f;
+    padding-top: 2%;
+    
+}
+
+#home-h5{
+    margin: 15px 0 0 29%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    text-shadow: 1px 3px 5px #0000005f;
+}
+
+/* End section1 styles */
+
+/* start section2 styles
+
+
+  #section2{
+    min-height: 400px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    box-shadow: inset 0px 25px 15px -20px rgba(0,0,0,0.2),inset 0px -25px 15px -20px rgba(0,0,0,0.2);}
+/* End section2 styles 
+ start section3 styles */
+ #section3{
+    background-color: white;
+    padding-bottom: 25px;
+ }
+#card-container-up {
+    width: 1024px;
+    min-height: fit-content;
+    background-color: rgb(224, 224, 224, 0.1);
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    padding: 16px 0 16px 0;
+    border: 1px dashed #77889955;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+#card-container-down {
+    width: 1024px;
+    min-height: fit-content;
+    background-color: rgb(224, 224, 224, 0.1);
+    margin: 10px auto;
+    display: flex;
+    padding: 16px 0 16px 0;
+    border: 1px dashed #77889955;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.card-div {
+    width: 320px;
+    margin-left: 16px;
+
+
+}
+
+/* End section3 styles */
+
+#footer1 {
+    background-image: url("../img/footer-bg1.png");
+    min-height: 25px;
+    background-repeat: repeat-x;
+    
+}
+
+#footer2 {
+    background-image: url("../img/footer-bg.png");
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-color: #212b34;
+    background-position: center;
+}
+
+.footer-menuclass {
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+
+.footer-menuclass:hover {
+    color: rgb(207, 226, 241);
+    font-weight: 600;
+}
+
+.footer-icon {
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+#facebook:hover {
+    color: #0088ff;
+    font-size: 1.4em;
+}
+
+#twitter:hover {
+    color: #b5b5b5;
+    font-size: 1.4em;
+}
+
+#youtube:hover {
+    color: #ff0000;
+    font-size: 1.4em;
+}
+
+#github:hover {
+    color: #9500ff;
+    font-size: 1.4em;
+}
+
+footer p {
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}
+
+
+
+
+
+
+
+/* about.html */
+
+
+#section1-about {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../img/bg-pattern.png");
+    background-repeat: repeat;
+    box-shadow: inset 0px 25px 15px -20px rgba(0, 0, 0, 0.2), inset 0px -25px 15px -20px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px dotted #4f505280;
+    border-top: 1px dotted #4f5052f0;
+}
+
+
+#profile-pic {
+    min-width: 35vw; /* عرض عکس به 50% از عرض صفحه نمایش */
+    
+}
+
+
+.typing-container {
+    display: block;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 5px;
+    font-size: 1.3em;
+    color: #00ff0c;
+    font-family: 'Space Mono', monospace;
+
+
+}
+
+
+#im{
+    
+    display: flex;
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+}
+#moansri{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    font-size: 6em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    padding: 0 20px 0 20px;
+}
+#moansri:hover{
+   
+    color: #e9e9e9;
+    display: flex;
+    font-size: 6em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    padding: 0 20px 0 20px;
 }
